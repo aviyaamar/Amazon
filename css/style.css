@@ -460,13 +460,27 @@ a {
     margin-top: 3px;
    
 }
-.star-row p{
+/* .star-row p{
     color: #007185
-}
+} */
 .star-row i{
     margin-top: 3px;
     color: #FFA41C;
-    font-size:14px
+    font-size:14px;
+
+}
+.star-row--page-3{
+    display: flex;
+     
+}
+.star-row--page-3 p{
+    font-size: 15px;
+    padding-left: 14px;
+}
+.star-row--page-3 i {
+    margin-top: 3px;
+    color: #FFA41C;
+    font-size:14px;
 }
 .line_bottom{
     border-bottom: 1px solid rgb(160, 159, 159);
@@ -625,7 +639,7 @@ a {
     width: 100%;
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
     margin-bottom: 10px;
 }
 .grid-container-images > div{
@@ -644,9 +658,9 @@ a {
 
 .flex-container{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
 }
-.image-size {
+/* .image-size {
     background: url(https://m.media-amazon.com/images/S/sash/M9SSJsDj8YXHO4p.png);
     background-position: 0 1000px;
     background-repeat: repeat-x;
@@ -656,7 +670,7 @@ a {
     width: 5.3rem;
     height: 1.5rem;
     background-position: -18.5rem -18.2rem;
-}
+} */
  .chevron i{
     color:gray;
     font-size: 10px;
@@ -680,4 +694,10 @@ a {
 }
 .checkbox{
 
+}
+.image-size img{
+    position: relative;
+    top: 5px;
+    height: 18px;
+    width: 45px;
 }
