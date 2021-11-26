@@ -1,0 +1,16 @@
+<!-- <script src="/index.js"></script>
+     <div class="relative">
+         <div  id = 'carrousel' class=" card-careousel card-prod img">
+         <!-- <img src='https://m.media-amazon.com/images/I/51Y6HpNRJJL._AC_UX450_UY450_SR450,450_.jpg'>
+         <a href='https://www.amazon.com/dp/B085M3S554/ref=sspa_dk_detail_0?psc=1&pd_rd_i=B085M3S554&pd_rd_w=b3nLS&pf_rd_p=9fd3ea7c-b77c-42ac-b43b-c872d3f37c38&pd_rd_wg=pm8kV&pf_rd_r=2AQZRADKZZJ366TVGQNN&pd_rd_r=7292f7e4-72bd-48e3-a7c5-34b06f068b7a&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyUUk0WEcxQUE1MzZEJmVuY3J5cHRlZElkPUEwNjU1MzIwR1k3NzE2S0VBODJYJmVuY3J5cHRlZEFkSWQ9QTA4NjkyNTA0SFVXUEJEM0pCRVMmd2lkZ2V0TmFtZT1zcF9kZXRhaWwmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl'>this is</a> -->
+        </div>
+     </div>
+    </div>
+    <!-- <div class="relative">
+        <div id="carrusel" class="card-careousel">
+          </div>
+      
+        <div id="carrousel-left" class="arrow absolute bg-blue-700 text-white p-3 p-3 shadow cursor-pointer hover:bg-blue-600"><span class="lnr lnr-chevron-left"></span></div>
+        <div id="carrousel-right"  class="arrow absolute right-0 bg-blue-700 text-white p-3 shadow cursor-pointer hover:bg-blue-600"><span class="lnr lnr-chevron-right"></span></div>
+          
+          </div> --> -->

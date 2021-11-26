@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-:root {
+@font-face {
+    font-family: "Amazon";
+    src: url("../font/Amazon-Ember-Medium.ttf");
+  }
+/* :root {
     --page-size: 100vh;
     --color-bluebeacon: #232f3e;
     --color-nav-top: #131921;
-}
+} */
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Amazon", sans-serif;
 }
 
 html {
@@ -19,17 +23,19 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
     font-size: 1.1rem;
-    background: #f4f4f4;
-    color: var(--secondary-color);
+    background: white;
+    color: black;
 }
 
 a {
     text-decoration: none;
+    font-size: 15px;
+    color:rgb(19, 122, 129)
 }
 
-p {
+/* p {
     margin: 0.75rem 0;
-}
+} */
 
 /* Navbar */
 .navbar-container {
@@ -38,7 +44,7 @@ p {
 
 .nav-top {
     color: white;
-    background: var(--color-nav-top);
+    background: #131921;
     display: flex;
     flex-flow: row nowrap;
     height: 60px;
@@ -110,7 +116,7 @@ p {
 
 .nav-line-1 {
     color: #ccc;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 14px;
     height: 14px;
     font-weight: 400;
@@ -118,7 +124,7 @@ p {
 
 .nav-line-2 {
     color: #fff;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 15px;
     font-weight: 700;
 }
@@ -149,7 +155,7 @@ p {
     border-top: 1px solid #f3f3f3;
     border-bottom: 1px solid #f3f3f3;
     height: 40px;
-    width: 160px; /* !not sure how to remove */
+    width: 160px; 
     margin: 0;
     padding-left: 5px;
     overflow: hidden;
@@ -176,7 +182,6 @@ p {
     top: 14px;
     right: 8px;
     border-style: solid;
-    _border-style: dashed;
     border-width: 4px;
     border-color: transparent;
     border-top: 4px solid #666;
@@ -235,7 +240,7 @@ p {
     margin-left: 15px;
     margin-right: 3px;
     background-position: 0 -130px;
-    background-image: url('/img/nav-sprite-flags.png');
+    background-image: url('/img/rzrQQdi0aRm6Dap.png');
 }
 
 .nav-language-selector .nav-arrow {
@@ -258,15 +263,17 @@ p {
     flex-flow: column nowrap;
     justify-content: flex-end;
     align-items: flex-start;
+    
 }
 
 .nav-sprite {
-    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
+    background-image: url('/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png');
     background-position: 0 1000px;
     background-repeat: repeat-x;
 }
 
 .nav-cart__icon {
+    display: inline-block;
     background-position: -10px -340px;
     width: 38px;
     height: 26px;
@@ -367,6 +374,7 @@ p {
       padding: 3px 9px;
       text-decoration: none;
       color: white;
+      font-size: 15px;
   }
   .border:hover{
     border: 1px solid white;
@@ -383,18 +391,21 @@ p {
     font-family: 'Amazon Ember', Arial, sans-serif;
     display:flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 10px 30px;
+    align-items:flex-start;
+    width: 100%;
     color: #0f1111;
+    margin-left: 10px ;
+    height: 140vh;
+    margin-top: 20px;
     
    
 }
 .product-showcase{ 
-    height: 300px;
+     height: 300px;
     width: 300px;
    max-width: 460px;
     max-height: 460px;
- 
+  
 }
 .product-showcase ul {
   list-style: none;
@@ -413,40 +424,260 @@ p {
     display: inline-block;
 }
 
-
-.side-section .product-showcase__image {
-   
-}
 .product-showcase__image img{
     height: 500px;
     width:500px;
     
 }
-.border2:hover{
+.border2:hover,
+.border2:focus{
     border: 2px solid orange;
+    /* transition: .2s;
+    transform: scale(1.15);v */
+    width: 192px;
+    height: 136px;
 }
+
 .product-description{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 200px;
-    
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    height: 300px;
+    margin-left: 250px;   
+
 }
 
 .product-description__title{
     font-weight: 400;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-
     font-size: 20px;
-    line-height: 32px;
-    text-size-adjust: 100%;
+    line-height: 30px;
+    margin: 2px;
 
-    margin-bottom: 0 !important;
-    padding-bottom: 0
+}
+.star-row{
+    margin-top: 3px;
+   
+}
+.star-row p{
+    color: #007185
+}
+.star-row i{
+    margin-top: 3px;
+    color: #FFA41C;
+    font-size:14px
+}
+.line_bottom{
+    border-bottom: 1px solid rgb(160, 159, 159);
+}
+.pd__price{
+    margin: 10px 0;
+    line-height: 2rem;
+    font-size: 15px;
+    padding: 0 20px;
+    color: black;
+}
 
+.pd__price--text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #b12704;
+}
+
+.a-color-secondary {
+    color: #565959;
+    font-size: 14px;
+}
+.a--base{
+  color:rgb(19, 122, 129);
+  font-size: 13px;
+  padding: 0 10px;
+}
+.pd_price__paragraph{
+    color: black;
+    padding-left: 40px;
+}
+.pd__import{
+    margin-bottom: 30px;
+}
+.pd_table{
+    margin: 10px 0;
   
+}
+.pd_table td{
+  padding: 0 15px 0 0;
+  font-size: 14px;
+}
+.pd_table--card{
+    margin: 10px 6px;
+}
+.pd_table--card td{
+    padding: 0 15px 0 0;
+    font-size: 14px;
+    font-size: 12px;
+  }
+  .pd_table--card td a{
+      font-size: 13px;
+  }
+.pd__features-title {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 4px;
+}
+.peoduct-about{
+    margin: 20px 0;
+}
+.peoduct-about h4{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.peoduct-about ul{
+    margin: 10px;
+}
+.peoduct-about li{
+    font-size: 14px;
+    line-height: 1.5rem;
+    
+}
+.card{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #0f1111;
+    margin-left:40px ;
+    height: 300px;
+    margin-top: 20px;
+}
+.card-container{
+    border: 1px solid grey;
+    height: 700px;
+    width: 250px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+    
+}
+
+.select-dropdown{
+    display: inline-block;
+    border-radius: 7px;
+    padding: 2px 4px;
+    font-size: 12px;
+    box-shadow: 0 2px 5px rgb(15 17 17 / 15%);
+    margin: 0 10px;
+}
+.buttons{
+       margin: 20px 50px;
+}
+.btn-1, .btn-2{
+        background-color:#F7CA00 ;
+        color: black;
+        padding: 10px 20px;  
+        border: none;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 4px;
+        border-radius: 20px;
+        width: 110%;
+    
+
+}
+.btn-2{
+    background-color:#FA8900 ;
+}
+.btn-3{
+    background-color:#EDEEF1 ;
+    color: black;
+    padding: 5px 5px;  
+    border: 1px solid gray;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 3px;
+    width: 120%;
+    margin: 20px  0 15px 0;
+}
+.lock{
+    margin: 10px 10px;
+    font-size: 13px;
+    
+}
+.lock i{
+    color:gray;
+    padding-right: 4px;
+    font-size: 13px;
+}
+.page-3{
+ width: 100%;
+  height: 100vh; 
+   margin: 20px;
+}
+.page-3__title{
+   margin: 10px 0;
+   color: #CC6600;
+   font-size: 20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.grid-container-images{
+    margin-top: 1px;
+    width: 100%;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 10px;
+}
+.grid-container-images > div{
+    padding: 5px;
+   
+}
+.grid-container-images a{
+    display:block;
+    font-size:14px
+}
+.grid-container-images img{
+    height:200px;
+    width: 200px;
+    background-color: white;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.image-size {
+    background: url(https://m.media-amazon.com/images/S/sash/M9SSJsDj8YXHO4p.png);
+    background-position: 0 1000px;
+    background-repeat: repeat-x;
+
+}
+.image-size i{
+    width: 5.3rem;
+    height: 1.5rem;
+    background-position: -18.5rem -18.2rem;
+}
+ .chevron i{
+    color:gray;
+    font-size: 10px;
+}
+
+.card--text{
+    margin: 15px 0;
+    font-size: 14px;
+}
+.card_h{
+   color: #527600; 
+   margin-top: 10px;
+   font-size: 16px;
+}
+.policy a{
+    font-size: 13px;
+}
+.policy__checkbox{
+    font-size: 13px;
+    
+}
+.checkbox{
+
 }
